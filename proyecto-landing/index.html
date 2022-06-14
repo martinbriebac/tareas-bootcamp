@@ -7,28 +7,70 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
-        <nav>        
-            <ul class="nav-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    Jumbotron
-
-
-    Catalogo
-
-
-    <Footer>
-        
-    </Footer>
+    <div class="topnav">
+        <h1 class="header">La Coruja</h1>
+        <a href="#">Catálogo</a>
+        <a href="#">Acerca de nosotros</a>
+        <a href="#">Contacto</a>
+        <input type="text" placeholder="Buscar en el sitio">
+        <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+          </svg></button>
+    </div>
+    <div class="content">
+        <h2>Aprende, Crea y Comparte</h2>
+        <p>Creemos en las manualidades como una forma de transmitir nuestros conocimientos a las siguientes <br>generaciones.</p>
+        <img src="./images/woman-knitting-pink-yarn-getty-0220-2000.jpg" height="200px" class="jumbotron-image responsive">
+        <div>
+            <p>Quieres aprender a tejer? Buscas profundizar tus conocimientos? <br>
+            Se parte de nuestra comunidad!</p>
+            <a href="#"><button>Acceder</button></a>
+        </div>
+    </div>
+    <div class="content catalogo">
+        <p>Catálogo</p>
+        <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="adult-sweater.jpg">
+                <img src="./images/adult-sweater.jpg" alt="Ropa Adultos" width="600" height="400">
+              </a>
+              <div class="desc">Ropa para adultos</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="kids-clothes.jpg">
+                <img src="./images/kids-clothes.jpg" alt="Ropa Ninos" width="600" height="400">
+              </a>
+              <div class="desc">Ropa para niños</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="accesories.jpg">
+                <img src="./images/accesories.jpg" alt="Accesorios" width="600" height="400">
+              </a>
+              <div class="desc">Accesorios</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="toys.jpg">
+                <img src="./images/toys.jpg" alt="Juguetes" width="600" height="400">
+              </a>
+              <div class="desc">Juguetes y juegos</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

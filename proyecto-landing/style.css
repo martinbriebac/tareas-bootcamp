@@ -1,10 +1,112 @@
-.nav-list{
+* {
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+  }
+  
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(223, 203, 154);
+    color: rgb(130, 44, 17);
     display: flex;
-    margin: 10px;
-    padding: 0;
-    list-style: none;
+    font-family: noto sans jp;
+  }
+  
+  /* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the content */
+.content {
+    background-color: rgb(130, 44, 17);
+    color: rgb(223, 203, 154);
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+.catalogo {
+    background-color: white;
 }
 
-.nav-list li {
-    margin-left: 10px;
+.jumbotron-image {
+    position: absolute;
+    height: 500px;
+    width: auto;
+    top: 56px;
+    right: 0;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  margin-left: 2rem;
 }
