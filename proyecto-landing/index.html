@@ -1,76 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>La Coruja</title>
 </head>
-<body>
-    <div class="topnav">
-        <h1 class="header">La Coruja</h1>
-        <a href="#">Catálogo</a>
-        <a href="#">Acerca de nosotros</a>
-        <a href="#">Contacto</a>
-        <input type="text" placeholder="Buscar en el sitio">
-        <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-          </svg></button>
-    </div>
-    <div class="content">
-        <h2>Aprende, Crea y Comparte</h2>
-        <p>Creemos en las manualidades como una forma de transmitir nuestros conocimientos a las siguientes <br>generaciones.</p>
-        <img src="./images/woman-knitting-pink-yarn-getty-0220-2000.jpg" height="200px" class="jumbotron-image responsive">
-        <div>
-            <p>Quieres aprender a tejer? Buscas profundizar tus conocimientos? <br>
-            Se parte de nuestra comunidad!</p>
-            <a href="#"><button>Acceder</button></a>
+
+<body class="">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/owl_logo-removebg-preview.png" height="50px" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav container-fluid">
+            <ul class="nav-list-custom">
+              <li><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+              <li><a class="nav-link" href="#">Catálogo</a></li>
+              <li><a class="nav-link" href="./login.html">Registro</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!--JUMBOTRON-->
+    <div class="bg-custom container-fluid">
+      <section class="container border rounded-3 py-3 bg-container">
+        <div class="row">
+          <div class="col-12 col-md-6 p-5">
+            <h1 class="mb-5 fw-bold text-center text-md-start">Aprende, Crea y Comparte.</h1>
+            <p>Aprende todas nuestras técnicas, diseños y patrones. O crea los tuyos y compártelos con el mundo.</p>
+            <p>Inscríbete en uno de nuestros cursos si eres un principiante con ganas de descubrir una nueva habilidad o
+              si eres un artesano buscando profundizar sus conocimientos.</p>
+            <p>Quieres saber más?</p>
+            <input type="email" placeholder="Escribe tu e-mail aqui" class="mb-2">
+            <button class="btn btn-primary">Enviar</button>
+            <p>Y te enviaremos nuestras ofertas. <span class="text-primary"><a href="#">Conoce nuestros términos y
+                  condiciones.</a></span></p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="./images/woman-knitting-pink-yarn-getty-0220-2000.jpg" alt="Foto jumbotron" width="100%"
+              class="img-fluid">
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="content catalogo">
-        <p>Catálogo</p>
-        <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="adult-sweater.jpg">
-                <img src="./images/adult-sweater.jpg" alt="Ropa Adultos" width="600" height="400">
-              </a>
-              <div class="desc">Ropa para adultos</div>
+
+    <!--CATALOGO-->
+    <div class="container-fluid py-5 px-4 bg-custom catalog-letter-color bg-catalog">
+      <h3 class="text-center mb-5 fw-bold">Elige una categoría para ver nuestros diseños</h3>
+      <p class="text-center mb-5">Descubre cientos de diseños. Si eres miembro de la comunidad puedes acceder a clases
+        online y aprender junto a uno de nuestros profesores.</p>
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-3 mb-3 ps-5">
+          <div class="card card-color">
+            <img src="./images/adult-sweater.jpg" class="card-img-top" alt="Ropa Adultos">
+            <div class="card-body">
+              <h5 class="card-title">Ropa Adultos</h5>
+              <p class="card-text">Prendas de temporada para hombres y mujeres.</p>
+              <a href="#" class="btn btn-primary">Ver diseños</a>
             </div>
           </div>
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="kids-clothes.jpg">
-                <img src="./images/kids-clothes.jpg" alt="Ropa Ninos" width="600" height="400">
-              </a>
-              <div class="desc">Ropa para niños</div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <div class="card card-color">
+            <img src="./images/kids-clothes.jpg" class="card-img-top" alt="Ropa Ninos">
+            <div class="card-body">
+              <h5 class="card-title">Ropa Niños</h5>
+              <p class="card-text">Para edades 0 - 12 años.</p>
+              <a href="#" class="btn btn-primary">Ver diseños</a>
             </div>
           </div>
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="accesories.jpg">
-                <img src="./images/accesories.jpg" alt="Accesorios" width="600" height="400">
-              </a>
-              <div class="desc">Accesorios</div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <div class="card card-color">
+            <img src="./images/accesories.jpg" class="card-img-top" alt="Accesorios">
+            <div class="card-body">
+              <h5 class="card-title">Accesorios</h5>
+              <p class="card-text">Gorros, bufandas, guantes y más.</p>
+              <a href="#" class="btn btn-primary">Ver diseños</a>
             </div>
           </div>
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="toys.jpg">
-                <img src="./images/toys.jpg" alt="Juguetes" width="600" height="400">
-              </a>
-              <div class="desc">Juguetes y juegos</div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3 pe-5">
+          <div class="card card-color">
+            <img src="./images/toys.jpg" class="card-img-top" alt="Juguetes">
+            <div class="card-body">
+              <h5 class="card-title">Juguetes</h5>
+              <p class="card-text">Artículos de entretención para todas las edades.</p>
+              <a href="#" class="btn btn-primary">Ver diseños</a>
             </div>
           </div>
-          <div class="clearfix"></div>
+        </div>
+      </div>
     </div>
-    <div class="footer">
-        <p>Footer</p>
+
+
+    <div class="container bg-container">
+      <table class="table table-dark table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Diseño</th>
+            <th scope="col">Asesoría</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Usuario Registrado</th>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+              </svg></td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+                viewBox="0 0 16 16">
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+              </svg></td>
+            <td>$1.990 CLP/producto</td>
+          </tr>
+          <tr>
+            <th scope="row">Usuario Premium</th>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+              </svg></td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+              </svg></td>
+            <td>$4.990 CLP/mes</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="sec-aboutus">
+        <h2>Acerca de Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius quibusdam laudantium ad maxime
+          consequuntur natus est voluptate incidunt, alias pariatur corporis eum explicabo quia eligendi, deleniti
+          saepe, voluptas minima?</p>
+        <ul class="sec-about-icons">
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div class="sec-quicklinks">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#">Términos & Condiciones</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="sec-shop">
+        <h2>Tienda</h2>
+        <ul>
+          <li><a href="#">Adultos</a></li>
+          <li><a href="#">Niños</a></li>
+          <li><a href="#">Accesorios</a></li>
+          <li><a href="#">Juguetes</a></li>
+        </ul>
+      </div>
+      <div class="sec-contact">
+        <h2>Contáctanos</h2>
+        <ul class="sec-info">
+          <li>
+            <span><i class="bi bi-geo-alt"></i></span>
+            <span>123 Calle Falsa<br>
+              Santiago, <br>Chile</span>
+          </li>
+          <li>
+            <span><i class="bi bi-telephone"></i></span>
+            <p><a href="tel:123456789">+1 234 567 89</a><br>
+              <a href="tel:123456789">+1 234 567 89</a>
+            </p>
+          </li>
+          <li>
+            <span><i class="bi bi-envelope"></i></span>
+            <p><a href="mailto:hola@geemail.com">hola@geemail.com</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="copyrightText">
+    <p>Copyright © 2022. Todos los derechos reservados. Esta es una página de aterrizaje ficticia para fines académicos.
+    </p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
